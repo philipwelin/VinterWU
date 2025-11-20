@@ -1,0 +1,99 @@
+body{
+    display:grid;
+    height:100vh;
+    width: 100vw;
+    grid-template-columns: auto 65vw 30vw;
+    grid-template-rows:  auto 70vh 10vh;
+    grid-template-areas:
+   'hd hd hd'
+   'mn mn as'
+   'ft ft ft';
+}
+
+header{
+grid-area:hd;
+background-color: aqua;
+}
+
+main{
+    grid-area: mn;
+}
+aside{
+    grid-area: as;
+    background-color:chocolate;
+}
+
+footer{
+    grid-area: ft;
+    background-color: deeppink;
+}
+
+#main{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-image:url(../img/map.png);
+    position: relative;
+}
+
+#aflink{
+position: absolute;
+top:320px;
+right: 750px;
+display: block;
+background-color: transparent;
+width: 150px;
+height: 200px;
+}
+
+
+#eulink{
+    position: absolute;
+    top:140px;
+    right:730px;
+    display: block;
+    background-color: transparent;
+    width:180px ;
+    height: 150px;
+
+}
+
+#aslink{
+    position: absolute;
+    top: 150px;
+    right:480px;
+    display: block;
+    background-color:transparent;
+    width: 220px;
+    height: 200px;
+}
+
+#nalink{
+position: absolute;
+top:140px;
+right: 1000px;
+display: block;
+background-color:transparent;
+width: 180px;
+height: 210px;
+
+}
+
+#salink{
+    position: absolute;
+    top:380px;
+    right: 930px;
+    display: block;
+    background-color:transparent;
+    width:200px;
+    height: 200px;
+}
+
+#oclink{
+    position: absolute;
+    top:370px;
+    right: 400px;
+    display: block;
+    background-color:transparent;
+    width: 200px;
+    height: 200px;
+}

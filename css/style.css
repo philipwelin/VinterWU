@@ -2,98 +2,184 @@ body{
     display:grid;
     height:100vh;
     width: 100vw;
-    grid-template-columns: auto 65vw 30vw;
-    grid-template-rows:  auto 70vh 10vh;
+    grid-template-columns: auto 65vw 35vw;
+    grid-template-rows:  20vh 80vh auto;
     grid-template-areas:
-   'hd hd hd'
+   'hd hd as'
    'mn mn as'
-   'ft ft ft';
+   'mn mn as';
+  background-color: aliceblue;
 }
 
 header{
 grid-area:hd;
-background-color: aqua;
+background-color: white;
+background-image: url(https://sbsbacknn.safasoft.com/api/v1/files/fetch/1ebb6cd0-dc78-4ad1-9be7-ffef75f64452);
+background-repeat: no-repeat;
+background-size: contain;
+margin:30px;
+border-radius: 10px;
+
 }
 
 main{
     grid-area: mn;
+margin: 30px;
 }
 aside{
     grid-area: as;
-    background-color:chocolate;
-}
-
-footer{
-    grid-area: ft;
-    background-color: deeppink;
+    background-color:white;
+    margin: 30px;
+    border-radius: 10px;
 }
 
 #main{
     background-size:contain;
     background-repeat: no-repeat;
     background-image:url(../img/map.png);
+    background-color: white;
     position: relative;
+    border-radius: 10px;
+
+}
+
+@property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#main::after, #main::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left:50%;
+    translate:-50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--angle),transparent 50%,#f39c12);
+    animation: 5s spin linear infinite;
+
+}
+
+#main::before{
+
+    filter:blur(1.5rem);
+    opacity: 1    ;
+ 
+}
+
+@keyframes spin{
+    from{
+--angle:0deg;
+    }
+    to{
+--angle:360deg;
+    }
 }
 
 #aflink{
 position: absolute;
-top:320px;
-right: 750px;
+top:500px;
+right: 860px;
 display: block;
-background-color: transparent;
-width: 150px;
-height: 200px;
+background-color:transparent;
+width: 250px;
+height: 350px;
 }
 
 
 #eulink{
     position: absolute;
-    top:140px;
-    right:730px;
+    top:200px;
+    right:870px;
     display: block;
-    background-color: transparent;
-    width:180px ;
-    height: 150px;
+    background-color:transparent;
+    width:350px ;
+    height: 270px;
 
 }
 
 #aslink{
     position: absolute;
     top: 150px;
-    right:480px;
+    right:300px;
     display: block;
     background-color:transparent;
-    width: 220px;
-    height: 200px;
+    width: 550px;
+    height: 450px;
 }
 
 #nalink{
 position: absolute;
-top:140px;
-right: 1000px;
+top:270px;
+right: 1250px;
 display: block;
 background-color:transparent;
-width: 180px;
-height: 210px;
+width: 380px;
+height: 300px;
 
 }
 
 #salink{
     position: absolute;
-    top:380px;
-    right: 930px;
+    top:600px;
+    right: 1150px;
     display: block;
     background-color:transparent;
     width:200px;
-    height: 200px;
+    height: 350px;
 }
 
 #oclink{
     position: absolute;
-    top:370px;
-    right: 400px;
+    top:650px;
+    right: 280px;
     display: block;
     background-color:transparent;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container aside{
+background-color:#f39c12;
+width: 90%;
+height: 30%;
+margin: 30px;
+padding: 20px;
+font-size: 30px;
+border-color: black;
+border-radius: 10px;
+}
+
+#item1{
+    background-image: url(https://wptravel.io/wp-content/uploads/2024/12/most-visited-cities-in-the-world-in-2024-1024x536.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xxx-large;
+    font-weight: 1000;
+    color: lightyellow;
+}
+
+#item2{
+    background-image: url(../img/Black-Friday-Flight-Deals-Photoroom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: xxx-large;
+}
+
+#item3{
+    background-image: url(../img/image-Photoroom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+

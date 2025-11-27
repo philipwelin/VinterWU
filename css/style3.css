@@ -1,20 +1,55 @@
 body{
     display: grid;
-    height: 100wh;
+    height:100vh;
     width: 100vw;
-    grid-template-rows: 30vh 70vh;
+    grid-template-rows: 10vh 90vh;
     grid-template-areas:
-   'hd '
+   'hd'
    'mn ';
-   background-color: aquamarine;
+
+   background-color: transparent;
 }
 
 header{
     grid-area: hd;
-    color: blue;
+    background-color: aquamarine;
+   
 }
 
 main{
     grid-area: mn;
-    color: beige;
+    background-color: blueviolet;
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container main{
+background-color:lightskyblue;
+width: 70%;
+height: 20%;
+margin: 0px;
+padding: 00px;
+font-size: 30px;
+border-color: black;
+border-radius: 10px;
+}
+
+#item1{
+    color: lightyellow;
+   
+    
+}
+
+#item2{
+    color: lightyellow;
+}
+
+#item3{
+    color: lightyellow;
 }

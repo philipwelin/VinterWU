@@ -161,12 +161,14 @@ border-radius: 10px;
 }
 
 #item1{
-    background-image: url(https://wptravel.io/wp-content/uploads/2024/12/most-visited-cities-in-the-world-in-2024-1024x536.jpg);
+    background-image: url( https://wptravel.io/wp-content/uploads/2024/12/most-visited-cities-in-the-world-in-2024-1024x536.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: xxx-large;
     font-weight: 1000;
     color: lightyellow;
+   
+    
 }
 
 #item2{

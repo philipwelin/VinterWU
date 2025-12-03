@@ -13,12 +13,15 @@ body{
 header{
     grid-area: hd;
     background-color: aquamarine;
+    color: white;
+    text-align: center;
+    font-size: 100px;
    
 }
 
 main{
     grid-area: mn;
-    background-color: blueviolet;
+    background-color:white;
 }
 
 
@@ -32,6 +35,7 @@ main{
 
 .container main{
 background-color:lightskyblue;
+background-image: url(https://wallpapers.com/images/hd/4k-minimalist-orange-aesthetic-forest-4dy7tgghgni5mwwc.jpg);
 width: 30%;
 height: 93%;
 margin: 20px;
@@ -43,15 +47,26 @@ border-radius: 10px;
 }
 
 #item1{
-    color: lightyellow;
-   
+    color:white;
+    font-size: 40px;
+   text-align: center;
     
 }
 
 #item2{
-    color: lightyellow;
+    color: white;
+    font-size: 40px;
+    text-align: center;
 }
 
 #item3{
-    color: lightyellow;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.flyg{
+font-size: 100px;
+    font-family:'Times New Roman', Times, serif;
 }

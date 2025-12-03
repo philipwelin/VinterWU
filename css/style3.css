@@ -27,17 +27,19 @@ main{
 .container{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .container main{
 background-color:lightskyblue;
-width: 70%;
-height: 20%;
-margin: 0px;
-padding: 00px;
+width: 30%;
+height: 93%;
+margin: 20px;
+padding: 20px;
 font-size: 30px;
 border-color: black;
 border-radius: 10px;
+
 }
 
 #item1{

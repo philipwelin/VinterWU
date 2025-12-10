@@ -12,7 +12,7 @@ body{
 
 header{
     grid-area: hd;
-    background-color: aquamarine;
+    background-color: #f39c12;
     color: white;
     text-align: center;
     font-size: 100px;
@@ -35,7 +35,6 @@ main{
 
 .container main{
 background-color:lightskyblue;
-background-image: url(https://wallpapers.com/images/hd/4k-minimalist-orange-aesthetic-forest-4dy7tgghgni5mwwc.jpg);
 width: 30%;
 height: 93%;
 margin: 20px;
@@ -50,6 +49,7 @@ border-radius: 10px;
     color:white;
     font-size: 40px;
    text-align: center;
+   background-image: url(../img/shutterstock-2409522421.jpg);
     
 }
 
@@ -57,12 +57,16 @@ border-radius: 10px;
     color: white;
     font-size: 40px;
     text-align: center;
+    background-image: url(../img/giza-pyramids-cairo-egypt-with-palm1.jpg);
 }
 
 #item3{
     color: white;
     font-size: 40px;
     text-align: center;
+    background-image: url(../img/Alexandria-Egypten2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -83,7 +87,7 @@ font-size: 100px;
 
     height: 100%;
 
-    background: aquamarine;
+    background: #f39c12;
     
 
 }
@@ -191,7 +195,7 @@ font-size: 100px;
 
     transform: translateX(-50%);
 
-    background: aquamarine
+    background: #f39c12
 
 }
 

@@ -12,6 +12,8 @@ body{
 
 header{
 grid-area:hd;
+margin: 30px;
+border-radius: 10px;
 background-color: white;
 text-align: center;
 font-size: xx-large;
@@ -20,9 +22,9 @@ margin-left: 20px;
 margin-right: 20px;
 position: relative;
 border-radius: 10px;
-background-image: url(../img/africaorange.png);
+background-image: url(https://sbsbacknn.safasoft.com/api/v1/files/fetch/1ebb6cd0-dc78-4ad1-9be7-ffef75f64452);
 background-repeat: no-repeat;
-background-position-x: center;
+background-size: contain;
 }
 
 @property --angle{
@@ -127,3 +129,27 @@ border-radius: 10px;
     background-repeat: no-repeat;
 }
 
+#orangetravel{
+    width: 800px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+#africatitle{
+    font-size: 150px;
+    font-weight:900px ;
+}
+
+#nav{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    font-size: 100px;
+    color:#f39c12;
+}
+
+#nav:hover{
+transform:scale(110%)
+}

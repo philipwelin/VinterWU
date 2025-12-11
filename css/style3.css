@@ -16,6 +16,7 @@ header{
     color: white;
     text-align: center;
     font-size: 100px;
+    margin-top: 5px;
    
 }
 
@@ -135,6 +136,8 @@ font-size: 100px;
 
     transform: translateY(100px);
 
+    
+
 }
 
 .container .card:hover .slide.slide1{
@@ -151,7 +154,9 @@ font-size: 100px;
 
     justify-content: center;
 
+color: black;
 
+font-size: 50px;
 
     align-items: center;
 
@@ -196,6 +201,7 @@ font-size: 100px;
     transform: translateX(-50%);
 
     background: #f39c12
+    
 
 }
 
@@ -222,6 +228,27 @@ font-size: 100px;
 
     text-align: center;
 
-   color: white;
+   color: black;
 
 }   
+
+
+#orangetravel{
+    width: 400px;
+    height: 125px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+#nav{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    font-size: 100px;
+    color:white;
+}
+
+#nav:hover{
+transform:scale(110%)
+}
